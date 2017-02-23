@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KsPa4JVbEeaTlvOJrYG_qQ" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_S4HQIJVbEeaTlvOJrYG_qQ" name="Flight">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_VeNIoJVbEeaTlvOJrYG_qQ" name="Flight"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oeGhIJVbEeaTlvOJrYG_qQ" name="Customer">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_s0AKYJVbEeaTlvOJrYG_qQ" name="Customer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wzxyoJVbEeaTlvOJrYG_qQ" name="Booking"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EFWJ8JVcEeaTlvOJrYG_qQ" name="FlightResource">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TAmHoJVkEeaTlvOJrYG_qQ" general="_aJ93sJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HTEqMJVcEeaTlvOJrYG_qQ" name="CustomerResource">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WB1EAJVkEeaTlvOJrYG_qQ" general="_aJ93sJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JmBkQJVcEeaTlvOJrYG_qQ" name="BookingResource">
+    <generalization xmi:type="uml:Generalization" xmi:id="_gUXq0JVkEeaTlvOJrYG_qQ" general="_aJ93sJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aJ93sJVcEeaTlvOJrYG_qQ" name="Resource"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_etqsYJVcEeaTlvOJrYG_qQ" name="AcmeAir"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_inMisJVcEeaTlvOJrYG_qQ" name="AdapterFactory"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_u9PSUJVcEeaTlvOJrYG_qQ" name="FlightAdapter">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_wwy6oJVcEeaTlvOJrYG_qQ" name="FlightAdapter"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zop4kJVcEeaTlvOJrYG_qQ" name="BookingAdapter"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_5RV_YJVcEeaTlvOJrYG_qQ" name="CustomerAdapter"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kCxMAJVgEeaTlvOJrYG_qQ" name="MongoDBAdapterFactory">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7_4fQJXKEea6G6J5ZpWZnQ" client="_kCxMAJVgEeaTlvOJrYG_qQ" supplier="_inMisJVcEeaTlvOJrYG_qQ" contract="_inMisJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Af9v8JViEeaTlvOJrYG_qQ" name="MongoDBAdapter"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_C2zEcJViEeaTlvOJrYG_qQ" name="CustomerMongoDBAdapter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5SQPQJVlEeaTlvOJrYG_qQ" general="_Af9v8JViEeaTlvOJrYG_qQ"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_j_5YYJXHEea6G6J5ZpWZnQ" client="_C2zEcJViEeaTlvOJrYG_qQ" supplier="_5RV_YJVcEeaTlvOJrYG_qQ" contract="_5RV_YJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PTgcwJViEeaTlvOJrYG_qQ" name="BookingMongoDBAdapter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_3rMK0JVlEeaTlvOJrYG_qQ" general="_Af9v8JViEeaTlvOJrYG_qQ"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_qmkxcJXHEea6G6J5ZpWZnQ" client="_PTgcwJViEeaTlvOJrYG_qQ" supplier="_u9PSUJVcEeaTlvOJrYG_qQ" contract="_u9PSUJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UVESIJViEeaTlvOJrYG_qQ" name="FlightMongoDBAdapter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4nYGQJVlEeaTlvOJrYG_qQ" general="_Af9v8JViEeaTlvOJrYG_qQ"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_oTQD8JXHEea6G6J5ZpWZnQ" client="_UVESIJViEeaTlvOJrYG_qQ" supplier="_zop4kJVcEeaTlvOJrYG_qQ" contract="_zop4kJVcEeaTlvOJrYG_qQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_f5NDsJViEeaTlvOJrYG_qQ" name="AbstractFactoryFactory"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wzyVgJViEeaTlvOJrYG_qQ" name="Router"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sx_zsJVlEeaTlvOJrYG_qQ" client="_KsPa4JVbEeaTlvOJrYG_qQ" supplier="_KsPa4JVbEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zRveUJVlEeaTlvOJrYG_qQ" client="_HTEqMJVcEeaTlvOJrYG_qQ" supplier="_oeGhIJVbEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0PccsJVlEeaTlvOJrYG_qQ" client="_JmBkQJVcEeaTlvOJrYG_qQ" supplier="_wzxyoJVbEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_LlzfIJVmEeaTlvOJrYG_qQ" name="instantiates" client="_f5NDsJViEeaTlvOJrYG_qQ" supplier="_kCxMAJVgEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ay_bAJVmEeaTlvOJrYG_qQ" name="Registers to path" client="_aJ93sJVcEeaTlvOJrYG_qQ" supplier="_wzyVgJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_hJK58JVmEeaTlvOJrYG_qQ" name="returns" client="_inMisJVcEeaTlvOJrYG_qQ" supplier="_u9PSUJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_iWbXQJVmEeaTlvOJrYG_qQ" name="returns" client="_inMisJVcEeaTlvOJrYG_qQ" supplier="_zop4kJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_jer_0JVmEeaTlvOJrYG_qQ" name="returns" client="_inMisJVcEeaTlvOJrYG_qQ" supplier="_5RV_YJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_rYRLMJVmEeaTlvOJrYG_qQ" name="instantiates" client="_kCxMAJVgEeaTlvOJrYG_qQ" supplier="_PTgcwJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_tdxfIJVmEeaTlvOJrYG_qQ" name="instantiates" client="_kCxMAJVgEeaTlvOJrYG_qQ" supplier="_UVESIJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0KG0QJVmEeaTlvOJrYG_qQ" name="instantiates" client="_KsPa4JVbEeaTlvOJrYG_qQ" supplier="_C2zEcJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_-eq0UJVmEeaTlvOJrYG_qQ" name="Receives parameter" client="_etqsYJVcEeaTlvOJrYG_qQ" supplier="_wzyVgJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qnMZUJXDEea6G6J5ZpWZnQ" name="Used to create factory" client="_etqsYJVcEeaTlvOJrYG_qQ" supplier="_f5NDsJViEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_tEIV0JXDEea6G6J5ZpWZnQ" name="Receives as parameter" client="_etqsYJVcEeaTlvOJrYG_qQ" supplier="_inMisJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_umoDUJXDEea6G6J5ZpWZnQ" client="_aJ93sJVcEeaTlvOJrYG_qQ" supplier="_inMisJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0R6cEJXMEea6G6J5ZpWZnQ" name="calls" client="_EFWJ8JVcEeaTlvOJrYG_qQ" supplier="_u9PSUJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3txe8JXMEea6G6J5ZpWZnQ" name="calls" client="_JmBkQJVcEeaTlvOJrYG_qQ" supplier="_zop4kJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_41tXYJXMEea6G6J5ZpWZnQ" name="calls" client="_HTEqMJVcEeaTlvOJrYG_qQ" supplier="_5RV_YJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OL3nEJdWEeawnd_5Gsw8Ww" name="ResourceFactory"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_R6cxoJdWEeawnd_5Gsw8Ww" name="instantiates" client="_OL3nEJdWEeawnd_5Gsw8Ww" supplier="_JmBkQJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_UdqVQJdWEeawnd_5Gsw8Ww" name="instantiates" client="_OL3nEJdWEeawnd_5Gsw8Ww" supplier="_EFWJ8JVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_eW6SUJdWEeawnd_5Gsw8Ww" name="instatiates" client="_OL3nEJdWEeawnd_5Gsw8Ww" supplier="_HTEqMJVcEeaTlvOJrYG_qQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_lhXG0JdWEeawnd_5Gsw8Ww" name="uses" client="_etqsYJVcEeaTlvOJrYG_qQ" supplier="_OL3nEJdWEeawnd_5Gsw8Ww"/>
+</uml:Model>

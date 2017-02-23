@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VH5CYJUDEean27_3tJrgVg" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_enESkJUDEean27_3tJrgVg" name="acmeair-serverside">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NiK4EJUMEean27_3tJrgVg" name="Injected Depedency" client="_enESkJUDEean27_3tJrgVg" supplier="_yoBfcJUDEean27_3tJrgVg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_WjcrUJUMEean27_3tJrgVg" client="_enESkJUDEean27_3tJrgVg" supplier="_uk8nYJUKEean27_3tJrgVg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jDoOYJUMEean27_3tJrgVg" name="Injected Dependency  " client="_VH5CYJUDEean27_3tJrgVg" supplier="_VH5CYJUDEean27_3tJrgVg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pKktkJUDEean27_3tJrgVg" name="acmeair-adapters"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yoBfcJUDEean27_3tJrgVg" name="acmeair-cloudant-adapters">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_HPbusJUMEean27_3tJrgVg" name="Implements  " client="_yoBfcJUDEean27_3tJrgVg" supplier="_pKktkJUDEean27_3tJrgVg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_uk8nYJUKEean27_3tJrgVg" name="acmeair-cassandra-adapters">
+    <packagedElement xmi:type="uml:Package" xmi:id="_2Q0t8JUKEean27_3tJrgVg" name="acmeair-cassandra-adapters"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_D90M8JUMEean27_3tJrgVg" name="Implements " client="_uk8nYJUKEean27_3tJrgVg" supplier="_pKktkJUDEean27_3tJrgVg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BcbDsJULEean27_3tJrgVg" name="acmeair-mongodb-adapters  ">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-Na7oJULEean27_3tJrgVg" name="Implements  " client="_BcbDsJULEean27_3tJrgVg" supplier="_pKktkJUDEean27_3tJrgVg"/>
+  </packagedElement>
+</uml:Model>

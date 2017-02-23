@@ -1,0 +1,8 @@
+# docker-compose up
+app:
+  image: ibmcom/swift-ubuntu:latest
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/root/acme-air
+  command: bash -c "cd /root/acme-air && rm -rf Packages && swift build --clean && swift build && swift test"
